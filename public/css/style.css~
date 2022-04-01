@@ -1,0 +1,55 @@
+/* DIV PROPERTIES */
+.banner{
+  width:95%;
+  /* height: 81vh; */
+  height:23vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6vw;
+  margin-bottom: auto;
+}
+.upload {
+  width:95%;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+  float: center;
+  margin-top: 5vw;
+  margin-bottom: auto;
+}
+#PHOTO{
+  width:95%;
+  height:40vw;
+  margin-top: 2vw;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#myImg{
+	object-fit: contain;
+}
+
+/* SAME ON EVERY SCREEN nav bar -- thank you w3schools */
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+a[target="nav"] {
+  text-align: center;
+  color:#b8bbbf
+  float:center;
+  TOP:1vw;
+  font-size:1vw;
+}
+a:hover {
+  color: none;
+  text-decoration: none;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- INTERNET -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- MY SHEETS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/colors.css">
+  </head>
+
+  <script type="application/javascript">
+    function copyToClipboard1() {
+
+      var copyText = ".c1{\nbackground-color: #a27a35;\n}\n.c2{\nbackground-color: #2a2f21;\n}\n."+
+      "c3{\nbackground-color: #d5d6d2;\n}\n.c4{\nbackground-color: #6f3511;\n}\n" +
+      ".c5{\nbackground-color: #baad97;\n}\n.c6{\nbackground-color: #d2d295;\n}"
+
+      /* Copy the text inside the text field */
+      navigator.clipboard.writeText(copyText);
+
+      /* Alert the copied text */
+      alert("CSS copied to clipboard");
+    }
+    function copyToClipboard2() {
+
+      var copyText = ".c1{\nbackground-color: #92826e;\n}\n.c2{\nbackground-color: #1e2210;\n}\n."+
+      "c3{\nbackground-color: #dec09e;\n}\n.c4{\nbackground-color: #b5bdbf;\n}\n" +
+      ".c5{\nbackground-color: #592d1e;\n}\n.c6{\nbackground-color: #5e581d;\n}"
+
+      /* Copy the text inside the text field */
+      navigator.clipboard.writeText(copyText);
+
+      /* Alert the copied text */
+      alert("CSS copied to clipboard");
+    }
+    function copyToClipboard3() {
+
+      var copyText = ".c1{\nbackground-color: #dad1b8;\n}\n.c2{\nbackground-color: #332615;\n}\n."+
+      "c3{\nbackground-color: #8ac79a;\n}\n.c4{\nbackground-color: #8d7653;\n}\n" +
+      ".c5{\nbackground-color: #5e7756;\n}\n.c6{\nbackground-color: #919599;\n}"
+
+      /* Copy the text inside the text field */
+      navigator.clipboard.writeText(copyText);
+
+      /* Alert the copied text */
+      alert("CSS copied to clipboard");
+    }
+    function copyToClipboard4() {
+
+      var copyText = ".c1{\nbackground-color: #4b79af;\n}\n.c2{\nbackground-color: #bacbdd;\n}\n."+
+      "c3{\nbackground-color: #1d2b39;\n}\n.c4{\nbackground-color: #99bcdc;\n}\n" +
+      ".c5{\nbackground-color: #415165;\n}\n.c6{\nbackground-color: #253454;\n}"
+
+      /* Copy the text inside the text field */
+      navigator.clipboard.writeText(copyText);
+
+      /* Alert the copied text */
+      alert("CSS copied to clipboard");
+    }
+    function copyToClipboard5() {
+
+      var copyText = ".c1{\nbackground-color: #383736;\n}\n.c2{\nbackground-color: #e17773;\n}\n."+
+      "c3{\nbackground-color: #5ebde1;\n}\n.c4{\nbackground-color: #649fe6;\n}\n" +
+      ".c5{\nbackground-color: #965a54;\n}\n.c6{\nbackground-color: #667d6f;\n}"
+
+      /* Copy the text inside the text field */
+      navigator.clipboard.writeText(copyText);
+
+      /* Alert the copied text */
+      alert("CSS copied to clipboard");
+    }
+    function copyToClipboard6() {
+
+      var copyText = ".c1{\nbackground-color: #b7765f;\n}\n.c2{\nbackground-color: #35231e;\n}\n."+
+      "c3{\nbackground-color: #f5e4b1;\n}\n.c4{\nbackground-color: #661e16;\n}\n" +
+      ".c5{\nbackground-color: #cc8fc6;\n}\n.c6{\nbackground-color: #895417;\n}"
+
+      /* Copy the text inside the text field */
+      navigator.clipboard.writeText(copyText);
+
+      /* Alert the copied text */
+      alert("CSS copied to clipboard");
+    }
+  </script>
+
+  <body>
+
+    <!-- NAV BAR  -->
+    <div class="w3-top">
+      <div class="almostWhitebutNot w3-padding w3-card links" style="letter-spacing:4px; opacity:0.75;">
+        <div>
+          <a href="/index" class="w3-button" target="nav"> home </a> <!-- LOGO -->
+          <a href="/about" class="w3-button" target="nav"> about </a> <!-- ABOUT -->
+          <a href="/create" class="w3-button" target="nav"> create </a> <!-- CREATE -->
+
+          <div class = "dropdown">
+            <a class="w3-button" target="nav"> profile </a> <!-- PROFILE -->
+            {% if session['user'] %}
+            <div class="dropdown-content" style="font-size:.95vw;letter-spacing:.5px; opacity:1;">
+              <a href="/profile"> My Profile </a>
+              <a href="/logout"> Log out </a>
+            </div>
+            {% else %}
+            <div class="dropdown-content" style="font-size:.95vw;letter-spacing:.5px; opacity:1;">
+              <a href="/login"> Log in </a>
+              <a href="/create_user"> New User </a>
+            </div>
+            {% endif %}
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- home banner -->
+    <div class="banner">
+      <img style="padding-left:3vw;width:95%; float:left; padding-bottom:2vw;" class="vertical-center rcorners" src="../img/paint2.png">
+    </div>
+
+    <!-- PALETTES GO HERE -->
+    <div id="palettes">
+      <h1>here's what's hot</h1>
+
+      <div class="row">
+
+        <div class="column">
+          <div class="card" onclick="copyToClipboard1()">
+            <p class="home"> foodie </p>
+            <p class="tiny-posted-by"> posted by @devgirl </p>
+            <img class="tiny-profile-pic" src="../img/glasses.jpeg">
+            <img id="smallVersion-thumbnail" src="../img/food.jpeg">
+            <div class="container">
+              <span class="box-thumbnail" style="background-color:#a27a35"> <!-- COLOR 1 -->
+                <p class="hex-thumbnail">#a27a35</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#2a2f21"> <!-- COLOR 2 -->
+                <p class="hex-thumbnail">#2a2f21</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#d5d6d2"> <!-- COLOR 3 -->
+                <p class="hex-thumbnail">#d5d6d2</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#6f3511"> <!-- COLOR 4 -->
+                <p class="hex-thumbnail">#6f3511</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#baad97"> <!-- COLOR 5 -->
+                <p class="hex-thumbnail">#baad97</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#d2d295"> <!-- COLOR 6 -->
+                <p class="hex-thumbnail">#d2d295</p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card" onclick="copyToClipboard2()">
+            <p class="home"> chairs </p>
+            <p class="tiny-posted-by"> posted by @maryjane </p>
+            <img class="tiny-profile-pic" src="../img/city.jpeg">
+            <img id="smallVersion-thumbnail" src="../img/chairs.jpeg">
+            <div class="container">
+              <span class="box-thumbnail" style="background-color:#92826e"> <!-- COLOR 1 -->
+                <p class="hex-thumbnail">#92826e</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#1e2210"> <!-- COLOR 2 -->
+                <p class="hex-thumbnail">#1e2210</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#dec09e"> <!-- COLOR 3 -->
+                <p class="hex-thumbnail">#dec09e</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#b5bdbf"> <!-- COLOR 4 -->
+                <p class="hex-thumbnail">#b5bdbf</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#592d1e"> <!-- COLOR 5 -->
+                <p class="hex-thumbnail">#592d1e</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#5e581d"> <!-- COLOR 6 -->
+                <p class="hex-thumbnail">#5e581d</p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card" onclick="copyToClipboard3()">
+            <p class="home"> ceiling </p>
+            <p class="tiny-posted-by"> posted by @tomas </p>
+            <img class="tiny-profile-pic" src="../img/tie.jpeg">
+            <img id="smallVersion-thumbnail" src="../img/ceiling.jpeg">
+            <div class="container">
+              <span class="box-thumbnail" style="background-color:#dad1b8"> <!-- COLOR 1 -->
+                <p class="hex-thumbnail">#dad1b8</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#332615"> <!-- COLOR 2 -->
+                <p class="hex-thumbnail">#332615</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#8ac79a"> <!-- COLOR 3 -->
+                <p class="hex-thumbnail">#8ac79a</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#8d7653"> <!-- COLOR 4 -->
+                <p class="hex-thumbnail">#8d7653</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#5e7756"> <!-- COLOR 5 -->
+                <p class="hex-thumbnail">#5e7756</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#919599"> <!-- COLOR 6 -->
+                <p class="hex-thumbnail">#919599</p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="column">
+          <div class="card" onclick="copyToClipboard4()">
+            <p class="home"> clouds </p>
+            <p class="tiny-posted-by"> posted by @maryjane </p>
+            <img class="tiny-profile-pic" src="../img/city.jpeg">
+            <img id="smallVersion-thumbnail" src="../img/clouds.jpeg">
+            <div class="container">
+              <span class="box-thumbnail" style="background-color:#4b79af"> <!-- COLOR 1 -->
+                <p class="hex-thumbnail">#4b79af</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#bacbdd"> <!-- COLOR 2 -->
+                <p class="hex-thumbnail">#bacbdd</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#1d2b39"> <!-- COLOR 3 -->
+                <p class="hex-thumbnail">#1d2b39</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#99bcdc"> <!-- COLOR 4 -->
+                <p class="hex-thumbnail">#99bcdc</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#415165"> <!-- COLOR 5 -->
+                <p class="hex-thumbnail">#415165</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#253454"> <!-- COLOR 6 -->
+                <p class="hex-thumbnail">#253454</p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card" onclick="copyToClipboard5()">
+            <p class="home"> park </p>
+            <p class="tiny-posted-by"> posted by @chuck </p>
+            <img class="tiny-profile-pic" src="../img/creative.jpeg">
+            <img id="smallVersion-thumbnail" src="../img/park.jpeg">
+            <div class="container">
+              <span class="box-thumbnail" style="background-color:#383736"> <!-- COLOR 1 -->
+                <p class="hex-thumbnail">#383736</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#e17773"> <!-- COLOR 2 -->
+                <p class="hex-thumbnail">#e17773</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#5ebde1"> <!-- COLOR 3 -->
+                <p class="hex-thumbnail">#5ebde1</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#649fe6"> <!-- COLOR 4 -->
+                <p class="hex-thumbnail">#649fe6</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#965a54"> <!-- COLOR 5 -->
+                <p class="hex-thumbnail">#965a54</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#667d6f"> <!-- COLOR 6 -->
+                <p class="hex-thumbnail">#667d6f</p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card" onclick="copyToClipboard6()">
+            <p class="home"> bakery </p>
+            <p class="tiny-posted-by"> posted by @devgirl </p>
+            <img class="tiny-profile-pic" src="../img/glasses.jpeg">
+            <img id="smallVersion-thumbnail" src="../img/carlos.jpeg">
+            <div class="container">
+              <span class="box-thumbnail" style="background-color:#b7765f"> <!-- COLOR 1 -->
+                <p class="hex-thumbnail">#b7765f</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#35231e"> <!-- COLOR 2 -->
+                <p class="hex-thumbnail">#35231e</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#f5e4b1"> <!-- COLOR 3 -->
+                <p class="hex-thumbnail">#f5e4b1</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#661e16"> <!-- COLOR 4 -->
+                <p class="hex-thumbnail">#661e16</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#cc8fc6"> <!-- COLOR 5 -->
+                <p class="hex-thumbnail">#cc8fc6</p>
+              </span>
+              <span class="box-thumbnail" style="background-color:#895417"> <!-- COLOR 6 -->
+                <p class="hex-thumbnail">#895417</p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+  <footer>
+    <p> </p>
+  </footer>
+</html>

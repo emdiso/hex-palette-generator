@@ -1,0 +1,25 @@
+
+sqlite3 palettes.db
+
+CREATE TABLE palettes (
+ uid INTEGER,
+ name TEXT NOT NULL,
+ c1 TEXT NOT NULL,
+ c2 TEXT NOT NULL,
+ c3 TEXT NOT NULL,
+ c4 TEXT NOT NULL,
+ c5 TEXT NOT NULL,
+ c6 TEXT NOT NULL,
+ image TEXT
+);
+
+.mode csv
+.import dev/data.csv palettes
+
+CREATE TABLE users (
+    user_id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    username TEXT NOT NULL,
+    encrypted_password TEXT NOT NULL,
+    photo TEXT
+);

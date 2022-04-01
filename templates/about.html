@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- INTERNET -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- MY STYLE SHEETS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/colors.css">
+  </head>
+
+  <body>
+
+    <!-- NAV BAR  -->
+    <div class="w3-top">
+      <div class="almostWhitebutNot w3-padding w3-card links" style="letter-spacing:4px; opacity:0.75;">
+        <div>
+          <a href="/index" class="w3-button" target="nav"> home </a> <!-- LOGO -->
+          <a href="/about" class="w3-button" target="nav"> about </a> <!-- ABOUT -->
+          <a href="/create" class="w3-button" target="nav"> create </a> <!-- CREATE -->
+
+          <div class = "dropdown">
+            <a class="w3-button" target="nav"> profile </a> <!-- PROFILE -->
+            {% if session['user'] %}
+            <div class="dropdown-content" style="font-size:.95vw;letter-spacing:.5px; opacity:1;">
+              <a href="/profile"> My Profile </a>
+              <a href="/logout"> Log out </a>
+            </div>
+            {% else %}
+            <div class="dropdown-content" style="font-size:.95vw;letter-spacing:.5px; opacity:1;">
+              <a href="/login"> Log in </a>
+              <a href="/create_user"> New User </a>
+            </div>
+            {% endif %}
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- home banner -->
+    <div id="grad" class="banner purple-ish">
+      <h2>#########</h2>
+    </div>
+
+    <div class="upload almostWhitebutNot">
+      <h1>what is hex?</h1>
+    </div>
+
+    <div class="about-content almostWhitebutNot">
+      <p class="hex-about">
+        Hex is a digital designer platform, here to cater to your color palette needs.<br>
+        If you really enjoy the vibe of a photo and want to capture that in your website, <br>
+        then what you need is a hex color generator. <br>
+        Just simply click create, upload the vibey photo, and then save your color palette. <br>
+        Or you can browse the home page for other vibey photos if you haven't found one yet. <br>
+        Click on any palette you like, and the css code for the colors will be copied to your clipboard! <br>
+        :) Happy color stealing :)
+      </p>
+    </div>
+
+  </body>
+
+  <footer>
+    <span style="height:7vw"></span>
+  </footer>
+</html>
