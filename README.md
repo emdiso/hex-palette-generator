@@ -15,5 +15,3 @@ create a hex palette.
 
 You can save your custom palette, which will be uploaded to a SQLite database, and then show up on your profile page. 
 Just like the landing page, you can copy the CSS code for your palette to your clipboard.
-
-## How to run
